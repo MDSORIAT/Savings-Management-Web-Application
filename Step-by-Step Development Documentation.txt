@@ -1,0 +1,389 @@
+# DOCUMENT 02: STEP-BY-STEP DEVELOPMENT DOCUMENTATION
+
+## PART A: বাংলা ডকুমেন্টেশন
+
+### 1. Development Goal
+
+এই Documentation-এর উদ্দেশ্য হলো Digital Samiti Web App-টি শুরু থেকে শেষ পর্যন্ত ধাপে ধাপে তৈরি করা।
+
+প্রতিটি Phase শেষ করার পর Testing করতে হবে। আগের Phase ঠিকভাবে শেষ না করে পরের Phase-এ যাওয়া যাবে না।
+
+### PHASE 01: Project Planning
+
+কাজ:
+- Project Requirements Finalize
+- User Roles Finalize
+- Page List Finalize
+- Main Features Finalize
+- Database Planning
+- Development Roadmap
+
+Deliverable:
+- Approved Project Plan
+- Page List
+- Feature List
+
+### PHASE 02: UI/UX Design
+
+কাজ:
+- Website Layout
+- Responsive Design
+- Navbar
+- Sidebar
+- Dashboard Design
+- Form Design
+- Mobile Design
+- Loading and Error States
+
+Deliverable:
+- Complete UI Design
+- Mobile Responsive Layout
+
+### PHASE 03: Project Setup
+
+কাজ:
+- Create GitHub Repository
+- Create Frontend Project
+- Create Backend Project
+- Install Dependencies
+- Configure Environment Variables
+- Setup Git
+- Create Development Branch
+
+Deliverable:
+- Working Project Structure
+
+### PHASE 04: Frontend Development
+
+কাজ:
+- Home Page
+- Registration Page
+- Login Page
+- Dashboard
+- Profile Page
+- Group Pages
+- Contribution Page
+- Bank Transfer Page
+- Admin Pages
+
+Deliverable:
+- Complete Frontend Interface
+
+### PHASE 05: Backend Development
+
+কাজ:
+- Express Server
+- MongoDB Connection
+- API Routes
+- Controllers
+- Models
+- Middleware
+- Error Handling
+
+Deliverable:
+- Working Backend API
+
+### PHASE 06: Authentication System
+
+কাজ:
+- User Registration
+- Login
+- Password Hashing
+- JWT Authentication
+- Logout
+- Password Reset
+- Email Verification
+
+Deliverable:
+- Secure User Authentication
+
+### PHASE 07: Role & Permission System
+
+কাজ:
+- Super Admin Role
+- Group Admin Role
+- Member Role
+- Role-Based Access Control
+- Permission Middleware
+
+Deliverable:
+- Role-Based Application
+
+### PHASE 08: Group Management
+
+কাজ:
+- Create Group
+- Edit Group
+- Explore Groups
+- Join Group
+- Approve Members
+- Manage Members
+- Group Rules
+
+Deliverable:
+- Complete Group Management
+
+### PHASE 09: Contribution System
+
+কাজ:
+- Create Contribution
+- Set Contribution Amount
+- Payment Deadline
+- Contribution History
+- Pending Payment
+- Paid Status
+- Payment Proof Submission
+
+Deliverable:
+- Working Contribution System
+
+### PHASE 10: Bank App Integration
+
+কাজ:
+- Create Send Money Button
+- Research Supported Japanese Bank App Links
+- Add Official Deep Links
+- Add Fallback Transfer Instructions
+- Add Copy Reference Feature
+- Add Payment Proof Upload
+- Add Manual Verification
+
+Deliverable:
+- Bank App Opening Feature
+
+Important:
+The Bank App opening feature does not confirm a payment. Payment verification must be handled separately.
+
+### PHASE 11: Payout Management
+
+কাজ:
+- Create Payout Schedule
+- Display Eligible Members
+- Track Payout Status
+- Record Approved Payouts
+- Payout History
+- Dispute Management
+
+Deliverable:
+- Payout Management System
+
+Real-money payout features must only be activated after the legal and provider requirements are satisfied.
+
+### PHASE 12: Notification System
+
+কাজ:
+- Payment Reminders
+- Group Invitations
+- Payment Status Notifications
+- Payout Notifications
+- Email Notifications
+
+Deliverable:
+- Notification System
+
+### PHASE 13: Admin Dashboard
+
+কাজ:
+- Manage Users
+- Manage Groups
+- Verify Payment Proofs
+- Review Reports
+- Manage Complaints
+- View Audit Logs
+
+Deliverable:
+- Complete Admin Panel
+
+### PHASE 14: Testing
+
+কাজ:
+- Frontend Testing
+- Backend Testing
+- API Testing
+- Database Testing
+- Authentication Testing
+- Permission Testing
+- Mobile Responsive Testing
+- Security Testing
+- Error Testing
+
+Deliverable:
+- Tested Application
+
+### PHASE 15: Deployment
+
+কাজ:
+- Push Code to GitHub
+- Connect GitHub to Railway
+- Deploy Backend
+- Configure Environment Variables
+- Connect MongoDB
+- Configure Frontend
+- Configure Domain
+- Configure HTTPS
+- Test Production Application
+
+Deliverable:
+- Live Web Application
+
+### PHASE 16: Final Review
+
+কাজ:
+- Fix Remaining Bugs
+- Review User Experience
+- Check Database Backups
+- Check Security Settings
+- Review Admin Permissions
+- Prepare Final Documentation
+
+Deliverable:
+- Final Project Release
+
+### 2. Development Rules
+
+1. Complete one phase at a time.
+2. Test every major feature.
+3. Use Git commits regularly.
+4. Do not store secret keys in frontend code.
+5. Do not skip security testing.
+6. Keep development and production environments separate.
+7. Do not activate real-money transactions before legal approval.
+
+---
+
+## PART B: ENGLISH DOCUMENTATION (IELTS 5.0 LEVEL)
+
+### 1. Development Goal
+
+This document explains how to build the Digital Samiti web application step by step.
+
+The project will be divided into different development phases.
+
+Each phase must be completed and tested before moving to the next phase.
+
+### 2. Development Phases
+
+**Phase 01: Project Planning**
+- Finalize project requirements.
+- Define user roles.
+- List all pages.
+- Plan the database.
+- Prepare the development plan.
+
+**Phase 02: UI/UX Design**
+- Design the website layout.
+- Create the dashboard.
+- Design forms and buttons.
+- Make the website mobile-friendly.
+
+**Phase 03: Project Setup**
+- Create a GitHub repository.
+- Create frontend and backend projects.
+- Install required packages.
+- Configure environment variables.
+- Set up Git.
+
+**Phase 04: Frontend Development**
+- Build the Home Page.
+- Build Login and Registration.
+- Build the Dashboard.
+- Build Group Pages.
+- Build Contribution Pages.
+- Build Admin Pages.
+
+**Phase 05: Backend Development**
+- Create the Express server.
+- Connect MongoDB.
+- Create models and routes.
+- Create controllers.
+- Create middleware.
+- Handle errors.
+
+**Phase 06: Authentication**
+- Create user registration.
+- Create login.
+- Hash passwords.
+- Add JWT authentication.
+- Add password reset.
+
+**Phase 07: User Roles**
+- Create Admin, Group Admin, and Member roles.
+- Control user permissions.
+- Protect private routes.
+
+**Phase 08: Group Management**
+- Create groups.
+- Join groups.
+- Approve members.
+- Manage group information.
+- Manage group rules.
+
+**Phase 09: Contribution System**
+- Create contributions.
+- Set payment deadlines.
+- Track payment status.
+- Save contribution history.
+- Upload payment proof.
+
+**Phase 10: Bank App Integration**
+- Create the Send Money button.
+- Add supported Bank App links.
+- Add fallback instructions.
+- Add a payment reference.
+- Add manual payment verification.
+
+**Phase 11: Payout Management**
+- Create payout schedules.
+- Track payout status.
+- Record approved payouts.
+- Show payout history.
+
+**Phase 12: Notifications**
+- Add payment reminders.
+- Add group notifications.
+- Add payment status messages.
+- Add email notifications.
+
+**Phase 13: Admin Dashboard**
+- Manage users.
+- Manage groups.
+- Verify payment proofs.
+- Review reports.
+- Manage complaints.
+
+**Phase 14: Testing**
+- Test frontend and backend.
+- Test APIs.
+- Test database operations.
+- Test user permissions.
+- Test mobile design.
+- Test security.
+
+**Phase 15: Deployment**
+- Upload code to GitHub.
+- Connect GitHub with Railway.
+- Deploy the backend.
+- Connect MongoDB.
+- Configure environment variables.
+- Deploy the frontend.
+- Add HTTPS and a domain.
+
+**Phase 16: Final Review**
+- Fix bugs.
+- Check security.
+- Check database backups.
+- Review the complete application.
+- Prepare the final release.
+
+### 3. Development Rules
+
+- Complete each phase carefully.
+- Test every important feature.
+- Save code changes with Git.
+- Keep secret keys private.
+- Test security before launch.
+- Do not use real money without legal approval.
+
+### 4. Final Result
+
+After completing all phases, Digital Samiti will be a working group savings management web application.

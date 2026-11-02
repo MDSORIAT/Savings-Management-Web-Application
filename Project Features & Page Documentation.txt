@@ -1,0 +1,348 @@
+# DOCUMENT 01: PROJECT FEATURES & PAGE DOCUMENTATION
+
+## PART A: বাংলা ডকুমেন্টেশন
+
+### 1. Project Introduction
+
+Digital Samiti একটি Group Savings Management Web Application। এখানে সদস্যরা একটি গ্রুপ তৈরি করতে পারবে, গ্রুপে Join করতে পারবে, নির্দিষ্ট পরিমাণ টাকা Contribution করতে পারবে এবং নির্ধারিত নিয়ম অনুযায়ী Group Fund Distribution পরিচালনা করতে পারবে।
+
+এই Web App জাপানের ব্যবহারকারীদের কথা মাথায় রেখে তৈরি করা হবে।
+
+**Main Goal:**
+- Group Savings Management
+- Member Management
+- Monthly Contributions
+- Bank App Opening through Send Money Button
+- Payment Tracking
+- Payout Management
+- Admin Control
+
+### 2. User Roles
+
+সিস্টেমে তিন ধরনের User থাকবে।
+
+1. Super Admin
+2. Group Admin / Creator
+3. Group Member
+
+### 3. Complete Page List
+
+#### A. Public Pages
+
+**1. Home Page**
+- Project Introduction
+- How It Works
+- Main Features
+- Benefits
+- Register Button
+- Login Button
+
+**2. About Page**
+- Digital Samiti সম্পর্কে তথ্য
+- Project Purpose
+- How the System Works
+
+**3. Contact Page**
+- Contact Form
+- Email
+- Support Information
+
+**4. Terms & Conditions Page**
+- User Rules
+- Group Rules
+- Payment Rules
+- Privacy Policy Link
+
+#### B. Authentication Pages
+
+**5. Registration Page**
+- Full Name
+- Email
+- Phone Number
+- Password
+- Confirm Password
+- Terms Acceptance
+
+**6. Login Page**
+- Email
+- Password
+- Remember Me
+- Forgot Password
+
+**7. Forgot Password Page**
+- Email Verification
+- Password Reset
+
+#### C. Member Dashboard Pages
+
+**8. User Dashboard**
+- Total Groups
+- Total Contributions
+- Pending Payments
+- Total Received
+- Recent Transactions
+- Upcoming Payment Deadline
+
+**9. My Profile Page**
+- Profile Picture
+- Full Name
+- Email
+- Phone Number
+- Change Password
+- Account Settings
+
+**10. My Groups Page**
+- Joined Groups
+- Group Status
+- Monthly Contribution
+- Group Details
+- View Group Button
+
+**11. Create Group Page**
+- Group Name
+- Description
+- Total Members
+- Contribution Amount
+- Duration
+- Payment Frequency
+- Payout Schedule
+- Group Rules
+
+**12. Explore Groups Page**
+- Available Groups
+- Group Information
+- Search Groups
+- Join Request
+
+**13. Group Details Page**
+- Group Information
+- Member List
+- Contribution Amount
+- Total Group Fund
+- Group Rules
+- Payout Schedule
+- Group Activity
+
+**14. Contribution Page**
+- Contribution Amount
+- Payment Deadline
+- Payment Status
+- Payment History
+- Send Money Button
+
+**15. Bank Transfer Page**
+- Contribution Amount
+- Bank Transfer Instructions
+- Bank Account Details, where legally authorized
+- Payment Reference
+- Open Bank App Button
+- Upload Transfer Receipt
+- Submit Payment Proof
+
+The Send Money button will try to open a supported Bank App using an official app link or deep link. If no supported link exists, the system will show bank transfer instructions.
+
+The application will not claim that money has been received only because the Bank App was opened.
+
+**16. Transaction History Page**
+- Transaction ID
+- Contribution Amount
+- Transaction Date
+- Payment Status
+- Payment Receipt
+
+**17. Payout History Page**
+- Scheduled Payout
+- Received Amount
+- Payout Date
+- Payout Status
+
+**18. Notification Page**
+- Payment Reminder
+- Group Invitation
+- Payment Confirmation
+- Payout Notification
+- Group Updates
+
+#### D. Group Admin Pages
+
+**19. Group Admin Dashboard**
+- Total Members
+- Total Contributions
+- Pending Contributions
+- Group Balance Records
+- Upcoming Payouts
+
+**20. Manage Members Page**
+- View Members
+- Approve Join Requests
+- Reject Requests
+- Member Status
+
+**21. Manage Contributions Page**
+- Member Payment List
+- Verify Payment Proof
+- Approve or Reject Proof
+- Payment Records
+
+**22. Manage Payouts Page**
+- View Payout Schedule
+- View Eligible Members
+- Record Approved Payouts
+- Payout History
+
+**23. Group Settings Page**
+- Edit Group Information
+- Manage Rules
+- Update Deadlines
+- Request Rule Changes
+- Member Voting
+
+#### E. Super Admin Pages
+
+**24. Admin Dashboard**
+- Total Users
+- Total Groups
+- Active Groups
+- Suspended Users
+- Payment Statistics
+
+**25. User Management Page**
+- View Users
+- Search Users
+- Suspend Accounts
+- Restore Accounts
+
+**26. Group Management Page**
+- View All Groups
+- Review Groups
+- Suspend Groups
+- Monitor Group Activity
+
+**27. Payment Management Page**
+- Payment Records
+- Pending Payment Proofs
+- Verified Payments
+- Disputed Payments
+
+**28. Reports Page**
+- Monthly Reports
+- User Reports
+- Group Reports
+- Contribution Reports
+- Payout Reports
+
+**29. Admin Settings Page**
+- Admin Profile
+- Role Management
+- System Settings
+- Audit Logs
+
+### 4. Main Application Workflow
+
+1. User registers.
+2. User logs in.
+3. User creates a group or joins an existing group.
+4. Group Admin approves members.
+5. Group rules are finalized.
+6. Members start contributing.
+7. Member clicks Send Money.
+8. Supported Bank App opens, or transfer instructions appear.
+9. Member submits payment proof if required.
+10. Authorized Admin verifies the payment.
+11. Payment status changes to PAID.
+12. Payouts are managed according to the approved group rules.
+
+### 5. Important Payment Rule
+
+Opening a Bank App does not confirm a successful transfer.
+
+The system must use verified bank information, an authorized payment provider, or manual payment verification.
+
+A group must not use an unapproved lottery or fund distribution model.
+
+---
+
+## PART B: ENGLISH DOCUMENTATION (IELTS 5.0 LEVEL)
+
+### 1. Project Introduction
+
+Digital Samiti is a group savings management web application.
+
+It helps people create savings groups, join groups, pay regular contributions, and manage group money records.
+
+The application will be designed mainly for users in Japan.
+
+### 2. User Roles
+
+There are three main user roles:
+
+1. Super Admin
+2. Group Admin
+3. Group Member
+
+### 3. Main Pages
+
+**Public Pages**
+- Home Page
+- About Page
+- Contact Page
+- Terms and Conditions
+- Privacy Policy
+
+**Authentication Pages**
+- Registration
+- Login
+- Forgot Password
+- Reset Password
+
+**Member Pages**
+- User Dashboard
+- My Profile
+- My Groups
+- Create Group
+- Explore Groups
+- Group Details
+- Contribution
+- Bank Transfer
+- Transaction History
+- Payout History
+- Notifications
+
+**Group Admin Pages**
+- Group Dashboard
+- Manage Members
+- Manage Contributions
+- Verify Payment Proof
+- Manage Payouts
+- Group Settings
+
+**Super Admin Pages**
+- Admin Dashboard
+- User Management
+- Group Management
+- Payment Management
+- Reports
+- Admin Settings
+- Audit Logs
+
+### 4. Main User Process
+
+1. A user creates an account.
+2. The user logs in.
+3. The user creates or joins a group.
+4. The Group Admin approves the members.
+5. Members follow the group rules.
+6. Members make their monthly contributions.
+7. A member clicks the Send Money button.
+8. The supported Bank App opens.
+9. The member sends money through the bank.
+10. The member submits payment proof if needed.
+11. An authorized person checks the payment.
+12. The system updates the payment status.
+13. The group manages its payout schedule.
+
+### 5. Main Goal
+
+The main goal is to make group savings easy, clear, and safe.
+
+Every member should be able to see their contributions, payment records, and group information.

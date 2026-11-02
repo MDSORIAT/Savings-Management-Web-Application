@@ -1,0 +1,636 @@
+# DOCUMENT 04: FILE MANAGEMENT & TECHNOLOGY DOCUMENTATION
+
+## PART A: বাংলা ডকুমেন্টেশন
+
+### 1. Technology Stack
+
+Digital Samiti তৈরি করতে নিচের Technology ব্যবহার করা হবে।
+
+#### Frontend
+- HTML5 — Website Structure
+- CSS3 — Website Design
+- JavaScript (ES6+) — Application Logic
+- React.js — Frontend Framework
+- React Router — Page Navigation
+- Axios — API Requests
+
+#### Backend
+- Node.js — JavaScript Runtime
+- Express.js — Backend Framework
+- JavaScript (ES6+) — Backend Programming
+- JWT — Authentication
+- bcrypt — Password Hashing
+- Multer — File Upload Handling
+- Zod বা Joi — Input Validation
+
+#### Database
+- MongoDB Community Server 8.0.x
+- Mongoose — MongoDB ODM
+- MongoDB Compass — Database GUI
+
+Use the latest stable patch of MongoDB 8.0.x for the first production setup. The currently listed 8.0 patch is 8.0.34. MongoDB 9.0.4 is also listed as the current major release, but it should be tested before choosing it for production.
+
+#### Development Tools
+- Visual Studio Code
+- Git
+- GitHub
+- Postman
+- MongoDB Compass
+- Chrome Developer Tools
+
+#### Deployment
+- Railway — Backend Hosting
+- Railway or another static hosting service — Frontend Hosting
+- MongoDB Atlas — Managed Database
+- GitHub — Source Code Management
+
+### 2. Main Project Folder Structure
+
+প্রজেক্টের Root Folder-এর নাম হবে:
+
+digital-samiti
+
+প্রস্তাবিত Folder Structure:
+
+digital-samiti/
+│
+├── frontend/
+│   ├── public/
+│   │   ├── images/
+│   │   ├── icons/
+│   │   └── favicon.ico
+│   │
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── pages/
+│   │   │   ├── public/
+│   │   │   ├── auth/
+│   │   │   ├── member/
+│   │   │   ├── group-admin/
+│   │   │   └── super-admin/
+│   │   │
+│   │   ├── routes/
+│   │   ├── services/
+│   │   ├── hooks/
+│   │   ├── context/
+│   │   ├── utils/
+│   │   ├── styles/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   ├── .env.example
+│   └── package.json
+│
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   ├── models/
+│   │   ├── controllers/
+│   │   ├── routes/
+│   │   ├── middleware/
+│   │   ├── services/
+│   │   ├── validators/
+│   │   ├── utils/
+│   │   ├── jobs/
+│   │   ├── uploads/
+│   │   ├── app.js
+│   │   └── server.js
+│   │
+│   ├── tests/
+│   ├── .env.example
+│   └── package.json
+│
+├── docs/
+│   ├── 01-project-features.md
+│   ├── 02-development-roadmap.md
+│   ├── 03-security.md
+│   └── 04-file-management.md
+│
+├── .gitignore
+├── README.md
+└── LICENSE
+
+### 3. Frontend Folder Responsibilities
+
+**assets/**
+- Images
+- Icons
+- Logo
+- Fonts
+
+**components/**
+- Navbar
+- Sidebar
+- Footer
+- Buttons
+- Forms
+- Cards
+- Modals
+- Tables
+
+**layouts/**
+- Public Layout
+- Authentication Layout
+- Member Dashboard Layout
+- Group Admin Layout
+- Super Admin Layout
+
+**pages/**
+- All Website Pages
+
+**routes/**
+- Public Routes
+- Protected Routes
+- Role-Based Routes
+
+**services/**
+- API Configuration
+- Authentication API
+- Group API
+- Contribution API
+- Payment API
+
+**hooks/**
+- Custom React Hooks
+
+**context/**
+- Authentication Context
+- User Context
+- Notification Context
+
+**utils/**
+- Helper Functions
+- Date Formatting
+- Currency Formatting
+
+### 4. Backend Folder Responsibilities
+
+**config/**
+- MongoDB Connection
+- Environment Configuration
+
+**models/**
+- User Model
+- Group Model
+- GroupMember Model
+- Contribution Model
+- Payment Model
+- Payout Model
+- Notification Model
+- AuditLog Model
+
+**controllers/**
+- Auth Controller
+- User Controller
+- Group Controller
+- Contribution Controller
+- Payment Controller
+- Payout Controller
+- Admin Controller
+
+**routes/**
+- Authentication Routes
+- User Routes
+- Group Routes
+- Contribution Routes
+- Payment Routes
+- Payout Routes
+- Admin Routes
+
+**middleware/**
+- Authentication Middleware
+- Authorization Middleware
+- Error Middleware
+- Upload Middleware
+- Rate Limit Middleware
+
+**services/**
+- Email Service
+- Bank App Link Service
+- Payment Verification Service
+- Notification Service
+- File Storage Service
+
+**validators/**
+- User Validation
+- Group Validation
+- Payment Validation
+
+**utils/**
+- Token Functions
+- Response Functions
+- Error Functions
+- File Functions
+
+**tests/**
+- Unit Tests
+- Integration Tests
+- API Tests
+
+### 5. Database Collections
+
+MongoDB-তে নিচের Collections তৈরি হবে:
+
+1. users
+2. groups
+3. groupmembers
+4. invitations
+5. contributions
+6. payments
+7. payouts
+8. notifications
+9. auditlogs
+10. supporttickets
+
+Financial Records-এর ক্ষেত্রে Amount Integer হিসেবে সংরক্ষণ করতে হবে। JPY-এর জন্য সাধারণত Yen-এর পূর্ণসংখ্যা ব্যবহার করা হবে।
+
+প্রতিটি Financial Record-এ Currency Field রাখতে হবে।
+
+### 6. File Management Rules
+
+Project Files:
+- Component Files
+- Page Files
+- Model Files
+- Controller Files
+- Route Files
+- Utility Files
+
+Uploaded Files:
+- Profile Pictures
+- Payment Receipts
+- Support Attachments
+
+File Management Rules:
+
+1. প্রতিটি File নির্দিষ্ট Folder-এ রাখতে হবে।
+2. File Name পরিষ্কার ও অর্থবহ হতে হবে।
+3. JavaScript File-এর জন্য .js অথবা .jsx ব্যবহার করতে হবে।
+4. Sensitive Files Public Folder-এ রাখা যাবে না।
+5. Secret Files GitHub-এ Upload করা যাবে না।
+6. Payment Receipts Private Storage-এ রাখতে হবে।
+7. অপ্রয়োজনীয় Files Delete করতে হবে।
+8. একই কাজের জন্য Duplicate Files তৈরি করা যাবে না।
+
+Production-এ Uploaded Files-এর জন্য Private Object Storage ব্যবহার করা ভালো। Railway-এর সাধারণ Application Filesystem-এর ওপর স্থায়ী File Storage হিসেবে নির্ভর করা যাবে না।
+
+### 7. Environment Variables
+
+Frontend .env.example:
+
+VITE_API_URL=http://localhost:5000/api
+
+Backend .env.example:
+
+PORT=5000
+
+NODE_ENV=development
+
+MONGODB_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_secret_key
+
+FRONTEND_URL=http://localhost:5173
+
+EMAIL_HOST=your_email_host
+
+EMAIL_USER=your_email_user
+
+EMAIL_PASSWORD=your_email_password
+
+FILE_STORAGE_BUCKET=your_private_bucket
+
+সব Real Secret Railway Variables বা Local Environment-এ রাখতে হবে।
+
+.env File GitHub-এ Upload করা যাবে না।
+
+Frontend-এ শুধু Public Configuration থাকবে। Database URL, JWT Secret, Email Password এবং Storage Secret কখনো Frontend-এ রাখা যাবে না।
+
+### 8. GitHub Management
+
+GitHub হবে Project-এর Main Source Code Repository।
+
+প্রস্তাবিত Branch:
+
+main
+develop
+feature/authentication
+feature/group-management
+feature/contribution
+feature/bank-app-link
+feature/admin-dashboard
+
+Git Rules:
+
+- প্রতিটি Feature-এর জন্য আলাদা Branch ব্যবহার করা।
+- কাজ শেষ হলে Pull Request তৈরি করা।
+- Test পাস হলে Merge করা।
+- গুরুত্বপূর্ণ কাজের পরে Commit করা।
+- Production Code শুধু main Branch থেকে Deploy করা।
+
+Example Commit Messages:
+
+feat: add user registration
+
+feat: create group management
+
+feat: add contribution system
+
+feat: add bank app opening button
+
+fix: correct login validation
+
+security: improve role permissions
+
+docs: update project documentation
+
+### 9. Railway Deployment Management
+
+Railway-এ নিচের Services ব্যবহার করা হবে।
+
+**Service 1: Frontend**
+- React Build
+- Public Website
+- Environment Configuration
+
+**Service 2: Backend**
+- Node.js
+- Express.js
+- REST API
+- Environment Variables
+- Health Check
+
+**Database: MongoDB Atlas**
+- Managed MongoDB
+- Database Connection
+- Secure Access
+- Backup Management
+
+Deployment Process:
+
+1. Create GitHub Repository.
+2. Push Project Code.
+3. Create Railway Account.
+4. Connect Railway with GitHub.
+5. Select the Project Repository.
+6. Configure Frontend Service.
+7. Configure Backend Service.
+8. Add Environment Variables.
+9. Connect MongoDB Atlas.
+10. Deploy the Application.
+11. Configure Domain and HTTPS.
+12. Test Production Website.
+
+Railway can automatically deploy new code after GitHub updates.
+
+### 10. Backup & File Storage
+
+- Database backup must be created regularly.
+- Uploaded receipts must be stored separately.
+- Private files must not be publicly accessible.
+- Important files must have backup copies.
+- Database recovery must be tested.
+
+### 11. Final Technology Summary
+
+| Component | Technology |
+|---|---|
+| Structure | HTML5 |
+| Design | CSS3 |
+| Programming | JavaScript ES6+ |
+| Frontend | React.js |
+| Routing | React Router |
+| Backend | Node.js |
+| Framework | Express.js |
+| Database | MongoDB 8.0.x |
+| ODM | Mongoose |
+| Authentication | JWT |
+| Password Security | bcrypt |
+| API Testing | Postman |
+| Code Management | Git + GitHub |
+| Backend Hosting | Railway |
+| Database Hosting | MongoDB Atlas |
+| File Storage | Private Object Storage |
+
+---
+
+## PART B: ENGLISH DOCUMENTATION (IELTS 5.0 LEVEL)
+
+### 1. Technology Stack
+
+The Digital Samiti project will use the following technologies.
+
+**Frontend**
+- HTML5
+- CSS3
+- JavaScript ES6+
+- React.js
+- React Router
+- Axios
+
+**Backend**
+- Node.js
+- Express.js
+- JavaScript
+- JWT
+- bcrypt
+- Multer
+- Zod or Joi
+
+**Database**
+- MongoDB Community Server 8.0.x
+- Mongoose
+- MongoDB Compass
+
+Use the latest stable patch of MongoDB 8.0.x for the first production setup.
+
+**Development Tools**
+- Visual Studio Code
+- Git
+- GitHub
+- Postman
+- MongoDB Compass
+
+**Deployment Tools**
+- Railway
+- MongoDB Atlas
+- GitHub
+
+### 2. Main Folder Structure
+
+The main project folder will be:
+
+digital-samiti/
+
+It will contain:
+
+**frontend/**
+- public
+- assets
+- components
+- layouts
+- pages
+- routes
+- services
+- hooks
+- context
+- styles
+
+**backend/**
+- config
+- models
+- controllers
+- routes
+- middleware
+- services
+- validators
+- utils
+- tests
+
+**docs/**
+- Project Features
+- Development Roadmap
+- Security Documentation
+- File Management Documentation
+
+### 3. Frontend Responsibilities
+
+The frontend folder will contain all website pages and user interface files.
+
+Components will include buttons, forms, cards, tables, navigation bars, and sidebars.
+
+The pages folder will contain public pages, authentication pages, member pages, and admin pages.
+
+The services folder will connect the frontend with backend APIs.
+
+### 4. Backend Responsibilities
+
+The backend folder will contain the main application logic.
+
+**Config:** Database and environment settings.
+
+**Models:** User, Group, Contribution, Payment, and Payout models.
+
+**Controllers:** Main application functions.
+
+**Routes:** API endpoints.
+
+**Middleware:** Authentication, permissions, and error handling.
+
+**Services:** Email, notifications, payment verification, and file storage.
+
+**Tests:** Unit, API, and integration tests.
+
+### 5. MongoDB Collections
+
+The main database collections will be:
+
+- users
+- groups
+- groupmembers
+- invitations
+- contributions
+- payments
+- payouts
+- notifications
+- auditlogs
+- supporttickets
+
+Financial records must store the correct amount and currency.
+
+### 6. File Management Rules
+
+- Keep files in the correct folders.
+- Use clear file names.
+- Use .js and .jsx for JavaScript files.
+- Do not upload secret files to GitHub.
+- Keep payment receipts private.
+- Remove unused files.
+- Avoid duplicate files.
+- Use private cloud storage for important uploads.
+
+### 7. Environment Variables
+
+The frontend will use a public API URL.
+
+The backend will use private settings such as:
+
+- MONGODB_URI
+- JWT_SECRET
+- EMAIL_PASSWORD
+- FILE_STORAGE_BUCKET
+
+Secret information must never be shared in frontend code or GitHub.
+
+### 8. GitHub Management
+
+GitHub will store the project source code.
+
+Main branches:
+
+- main
+- develop
+- feature/authentication
+- feature/group-management
+- feature/contribution
+- feature/bank-app-link
+- feature/admin-dashboard
+
+Developers should use feature branches and pull requests.
+
+Every important change should have a clear commit message.
+
+### 9. Railway Deployment
+
+Railway will host the frontend and backend services.
+
+MongoDB Atlas will manage the database.
+
+Deployment steps:
+
+1. Create a GitHub repository.
+2. Upload the project code.
+3. Create a Railway account.
+4. Connect GitHub.
+5. Select the repository.
+6. Configure frontend and backend.
+7. Add environment variables.
+8. Connect MongoDB Atlas.
+9. Deploy the application.
+10. Add a domain and HTTPS.
+11. Test the live website.
+
+### 10. Backup Management
+
+- Create regular database backups.
+- Keep uploaded files in private storage.
+- Protect payment receipts.
+- Test database recovery.
+- Keep important files safe.
+
+### 11. Final Technology List
+
+| Purpose | Technology |
+|---|---|
+| Structure | HTML5 |
+| Design | CSS3 |
+| Programming | JavaScript |
+| Frontend | React.js |
+| Backend | Node.js |
+| Framework | Express.js |
+| Database | MongoDB 8.0.x |
+| ODM | Mongoose |
+| Authentication | JWT |
+| Password Hashing | bcrypt |
+| Code Management | GitHub |
+| Hosting | Railway |
+| Database Hosting | MongoDB Atlas |
+| API Testing | Postman |
+
+### 12. Final Goal
+
+The goal is to build a well-organized, secure, and easy-to-maintain web application.
+
+All project files, database records, and deployment settings must be managed correctly.

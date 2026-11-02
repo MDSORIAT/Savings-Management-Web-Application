@@ -1,0 +1,536 @@
+# AI Project Tracking & Management System
+## Project: Digital Samiti
+
+**Document Version:** 1.0  
+**Purpose:** Maintain project progress, development history, AI context, and task management.
+
+---
+
+## 1. Introduction
+
+The Digital Samiti project will use an AI Project Tracking System to manage the complete development process.
+
+Sometimes an AI coding assistant may forget previous instructions, repeat completed tasks, change the project structure, or lose development context.
+
+To solve this problem, we will maintain a set of documentation files inside the GitHub repository.
+
+These files will help any new AI agent understand:
+
+- What the project is about.
+- Which features are required.
+- Which technologies are being used.
+- What has already been completed.
+- What tasks are still pending.
+- Which problems need to be fixed.
+- What the next development task should be.
+
+**Main Goal:** Every AI agent must continue from the actual project status instead of starting from the beginning.
+
+---
+
+## 2. Documentation Folder Structure
+
+Create the following structure in the project root:
+
+```text
+digital-samiti/
+│
+├── AI_INSTRUCTIONS.md
+│
+├── docs/
+│   ├── ai-tracking/
+│   │   ├── PROJECT_MASTER.md
+│   │   ├── TASK_TRACKER.md
+│   │   ├── AI_CONTEXT.md
+│   │   ├── SESSION_LOG.md
+│   │   ├── DEVELOPMENT_ROADMAP.md
+│   │   ├── RULES.md
+│   │   ├── DECISIONS.md
+│   │   ├── BUG_TRACKER.md
+│   │   └── TEST_REPORT.md
+│   │
+│   ├── project/
+│   │   ├── PROJECT_FEATURES.md
+│   │   ├── PAGE_DOCUMENTATION.md
+│   │   └── DATABASE_DOCUMENTATION.md
+│   │
+│   └── security/
+│       └── SECURITY_DOCUMENTATION.md
+│
+├── frontend/
+├── backend/
+├── README.md
+└── package.json
+```
+
+---
+
+## 3. Documentation File Responsibilities
+
+### 3.1 AI_INSTRUCTIONS.md
+
+This is the main instruction file for every AI agent.
+
+It explains:
+- How an AI agent should work.
+- Which documentation files it must read.
+- How to select the next task.
+- How to test completed work.
+- How to update project documentation.
+- Which project rules must not be changed without approval.
+
+Every new AI agent must read this file first.
+
+### 3.2 PROJECT_MASTER.md
+
+This file contains the complete project overview.
+
+It should include:
+- Project name and purpose.
+- Main features.
+- User roles.
+- Technology stack.
+- Frontend and backend architecture.
+- Database overview.
+- Important project requirements.
+
+This file should change only when the main project scope or architecture changes.
+
+### 3.3 TASK_TRACKER.md
+
+This file tracks every development task.
+
+Each task must have a status.
+
+**Task Status:**
+
+| Status | Meaning |
+|---|---|
+| NOT_STARTED | Work has not started |
+| IN_PROGRESS | Work is ongoing |
+| BLOCKED | Work cannot continue |
+| REVIEW | Work needs review |
+| TESTING | Work is being tested |
+| COMPLETED | Work is implemented and verified |
+
+Example:
+
+```markdown
+# Task Tracker
+
+## Phase 1: Project Setup
+
+- [x] Create GitHub repository
+- [x] Create project documentation
+- [ ] Setup React frontend
+- [ ] Setup Express backend
+- [ ] Connect MongoDB
+
+## Phase 2: Authentication
+
+- [ ] User registration
+- [ ] User login
+- [ ] Password hashing
+- [ ] JWT authentication
+- [ ] Role-based access control
+
+## Phase 3: Group Management
+
+- [ ] Create group
+- [ ] Join group
+- [ ] Invite members
+- [ ] Manage group members
+
+## Phase 4: Contribution Management
+
+- [ ] Create contribution records
+- [ ] Payment proof submission
+- [ ] Payment verification
+- [ ] Contribution history
+```
+
+Only mark a task COMPLETED after implementation and verification.
+
+### 3.4 AI_CONTEXT.md
+
+This file contains the current development context.
+
+Every AI agent must update this file when important development work is completed.
+
+Example:
+
+```markdown
+# Current Project Context
+
+Project: Digital Samiti
+
+Current Phase: Phase 1 - Project Setup
+
+Frontend: React
+Backend: Node.js + Express
+Database: MongoDB
+
+Completed:
+- Project documentation created
+- GitHub repository created
+
+In Progress:
+- Frontend setup
+
+Pending:
+- Backend setup
+- MongoDB connection
+- Authentication
+
+Current Next Task:
+Setup React frontend.
+
+Important Notes:
+Do not change the approved technology stack
+without discussing it first.
+```
+
+### 3.5 SESSION_LOG.md
+
+This file stores the history of every AI development session.
+
+Example:
+
+```markdown
+# Development Session Log
+
+## Session 01
+
+Date: YYYY-MM-DD
+
+AI Agent: ChatGPT
+
+Completed:
+- Created frontend folder
+- Installed React dependencies
+- Created initial application structure
+
+Files Changed:
+- frontend/package.json
+- frontend/src/App.jsx
+
+Testing:
+- Development server started successfully
+
+Problems:
+- No known problems
+
+Next Task:
+Create the main application layout.
+```
+
+Every AI agent must add a new session entry instead of deleting previous history.
+
+### 3.6 DEVELOPMENT_ROADMAP.md
+
+This file contains the complete development plan.
+
+Example:
+
+```markdown
+# Development Roadmap
+
+Phase 1: Project Planning
+Phase 2: Project Setup
+Phase 3: Authentication
+Phase 4: User Dashboard
+Phase 5: Group Management
+Phase 6: Contribution Management
+Phase 7: Payment Verification
+Phase 8: Payout Management
+Phase 9: Admin Dashboard
+Phase 10: Security and Testing
+Phase 11: Deployment
+Phase 12: Final Review
+```
+
+### 3.7 RULES.md
+
+This file contains the permanent development rules.
+
+Rules:
+
+1. Do not change the approved technology stack without approval.
+2. Do not delete important files without permission.
+3. Do not create duplicate features.
+4. Follow the existing folder structure.
+5. Validate all user inputs.
+6. Protect private user information.
+7. Never expose passwords, API keys, or secrets.
+8. Use server-side permission checks.
+9. Test every important feature.
+10. Update documentation after completing work.
+
+### 3.8 DECISIONS.md
+
+This file stores important project decisions and their reasons.
+
+Example:
+
+```markdown
+# Architecture Decisions
+
+## Decision 01: Database
+
+Selected: MongoDB
+
+Reason:
+The project needs flexible document-based data storage.
+
+## Decision 02: Frontend
+
+Selected: React
+
+Reason:
+React helps build reusable UI components.
+
+## Decision 03: Payment Confirmation
+
+Decision:
+Opening a bank application does not confirm payment.
+
+Payment status must be verified separately.
+```
+
+### 3.9 BUG_TRACKER.md
+
+This file stores known problems.
+
+Example:
+
+```markdown
+# Bug Tracker
+
+## BUG-001
+
+Title: Login API returns an incorrect error.
+
+Status: OPEN
+
+Priority: HIGH
+
+Description:
+Login API does not handle invalid passwords correctly.
+
+Expected Result:
+The API should return a proper authentication error.
+
+Current Status:
+Waiting for investigation.
+```
+
+### 3.10 TEST_REPORT.md
+
+This file stores testing results.
+
+Example:
+
+```markdown
+# Test Report
+
+## Authentication Testing
+
+Registration:
+Status: NOT_TESTED
+
+Login:
+Status: NOT_TESTED
+
+Invalid Password:
+Status: NOT_TESTED
+
+Protected Route:
+Status: NOT_TESTED
+```
+
+Never report a test as PASSED unless it has actually been executed.
+
+---
+
+## 4. Mandatory AI Agent Workflow
+
+Every new AI agent must follow this workflow.
+
+### Step 1: Read Project Documentation
+
+Before writing code, read:
+
+1. AI_INSTRUCTIONS.md
+2. PROJECT_MASTER.md
+3. TASK_TRACKER.md
+4. DEVELOPMENT_ROADMAP.md
+5. AI_CONTEXT.md
+6. SESSION_LOG.md
+7. RULES.md
+8. DECISIONS.md
+
+Also read relevant feature and security documentation.
+
+### Step 2: Inspect the Actual Project
+
+The AI agent must inspect:
+
+- Existing source code.
+- Frontend and backend folders.
+- package.json files.
+- Database configuration.
+- Git status and recent commits.
+- Existing tests.
+
+Do not trust documentation blindly. Compare it with the actual code.
+
+### Step 3: Identify the Next Task
+
+Check TASK_TRACKER.md and AI_CONTEXT.md.
+
+Select the next logical unfinished task.
+
+Do not repeat a completed task unless a bug or missing requirement is found.
+
+### Step 4: Implement the Task
+
+Follow the approved architecture and coding rules.
+
+Work on one main task at a time.
+
+Do not make unrelated changes.
+
+### Step 5: Test the Implementation
+
+Check:
+
+- Does the feature work?
+- Does the API return the correct response?
+- Is the database data correct?
+- Are permissions working?
+- Are error cases handled?
+- Are there any known bugs?
+
+### Step 6: Update Documentation
+
+After completing the task, update:
+
+- TASK_TRACKER.md
+- AI_CONTEXT.md
+- SESSION_LOG.md
+- CHANGELOG.md, if maintained
+- BUG_TRACKER.md, if necessary
+- TEST_REPORT.md, if testing was performed
+
+### Step 7: Provide a Final Report
+
+At the end of every session, report:
+
+```text
+SESSION REPORT
+
+Completed Tasks:
+- ...
+
+Files Created:
+- ...
+
+Files Modified:
+- ...
+
+Tests Performed:
+- ...
+
+Test Results:
+- ...
+
+Known Problems:
+- ...
+
+Blocked Tasks:
+- ...
+
+Next Recommended Task:
+- ...
+```
+
+---
+
+## 5. Task Completion Rules
+
+A task can be marked COMPLETED only when:
+
+- Required code has been implemented.
+- The feature meets its requirements.
+- Relevant tests have passed.
+- No known critical issue remains.
+- Documentation has been updated.
+- The actual result has been checked.
+
+If a task is partially completed, keep it IN_PROGRESS or move it to REVIEW.
+
+Never mark unfinished work as completed just to make project progress look better.
+
+---
+
+## 6. GitHub Management
+
+Use GitHub to maintain source code and development history.
+
+Recommended workflow:
+
+1. Create a GitHub repository.
+2. Push the initial project structure.
+3. Commit changes after meaningful tasks.
+4. Use GitHub Issues to record bugs and development tasks.
+5. Use GitHub Projects for Kanban task management.
+6. Review changes before merging into the main branch.
+
+Suggested branches:
+
+```text
+main
+develop
+feature/authentication
+feature/group-management
+feature/contribution
+bugfix/login-error
+```
+
+Never commit passwords, API keys, database credentials, or private user information.
+
+---
+
+## 7. Important Security and Financial Rules
+
+Digital Samiti may handle financial information. Therefore:
+
+- Never store passwords in plain text.
+- Never expose private payment information.
+- Use proper server-side authorization.
+- Keep financial transaction records and audit history.
+- Do not allow users to edit verified financial records without an authorized correction process.
+- Validate payment proof before updating payment status.
+- Opening a bank app does not mean payment is completed.
+- Do not mark a contribution as PAID without verification.
+- Review applicable Japanese financial, payment, consumer-protection, and lottery-related laws before enabling real-money operations.
+
+---
+
+## 8. Final Project Management Principle
+
+The documentation files are the project's persistent knowledge base.
+
+The source code is the actual implementation.
+
+Git history shows how the code changed.
+
+Tests provide evidence that the implementation works.
+
+No AI agent should assume that a feature exists only because a document says it exists.
+
+Every new AI agent must compare the documentation with the actual repository before continuing development.
+
+**Final Rule: Read → Inspect → Plan → Implement → Test → Update Documentation → Report.**
+
+This workflow must be followed throughout the Digital Samiti project.
